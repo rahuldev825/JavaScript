@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .theme-change {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        .theme-change a {
+            color: royalblue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <span class="fa-solid fa-moon" onclick="icon_replace()"></span>
+    </div>
+    <h1>Hello Rahul</h1>
+    <a href="">Click Here</a>
+    <script>
+        let icon = document.querySelector(".fa-moon");
+        function icon_replace() {
+            document.body.classList.toggle("theme-change");
+
+            //  for replace the icon
+            if (document.body.classList.contains("theme-change")) {
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-sun")
+            } else {
+                icon.classList.remov("fa-sun")
+                icon.classList.add("fa-moon")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
